@@ -12,18 +12,7 @@ class Reserve extends Component {
 	const reserveList = reservations.length ? (
 		reservations.map(reservation => {
 		  return (
-			<section class="content-shopping-cart-page">
-		<div class="container">
-				<div class="wrap-table-shopping-cart">
-					<table class="table-shopping-cart">
-						<tr class="table_head">
-							<th class="column-1">Description</th>
-							<th class="column-2">Name </th>
-							<th class="column-3">Date</th>
-							<th class="column-4">Notes</th>
-							<th class="column-5">Time</th>
-							<th class="column-6"></th>
-						</tr>
+		
 
 						<tr key={reservation.id}>
             <td>
@@ -41,10 +30,7 @@ class Reserve extends Component {
 								</button>
 							</td>
 						</tr>
-						</table>
-						</div>
-					</div>
-					</section>
+						
 			)
         } 
        
@@ -60,9 +46,23 @@ class Reserve extends Component {
 	)
 
     return (
-		<div>
+		<section class="content-shopping-cart-page">
+		<div class="container">
+				<div class="wrap-table-shopping-cart">
+					<table class="table-shopping-cart">
+						<tr class="table_head">
+							<th class="column-1">Description</th>
+							<th class="column-2">Name </th>
+							<th class="column-3">Date</th>
+							<th class="column-4">Notes</th>
+							<th class="column-5">Time</th>
+							<th class="column-6"></th>
+						</tr>
         {reserveList}
-		</div>
+		</table>
+						</div>
+					</div>
+					</section>
        
     )
   }

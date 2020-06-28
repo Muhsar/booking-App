@@ -12,18 +12,7 @@ class Cart extends Component {
 		carts.map(cart => {
 		  return (
 			
-			<section class="content-shopping-cart-page">
-			<div class="container">
-					<div class="wrap-table-shopping-cart">
-						<table class="table-shopping-cart">
-							<tr class="table_head">
-								<th class="column-1">Product</th>
-								<th class="column-2">Name & Description</th>
-								<th class="column-3">Price</th>
-								<th class="column-4">Quantity</th>
-								<th class="column-5">Total</th>
-								<th class="column-6"></th>
-							</tr>
+			
 						<tr key={cart.id}>
 							<td class="column-1">
 								<div class="img-product">
@@ -42,10 +31,7 @@ class Cart extends Component {
 								</button>
 							</td>
 						</tr>
-						</table>
-						</div>
-					</div>
-					</section>
+						
 			)
         } 
        
@@ -61,9 +47,23 @@ class Cart extends Component {
 	)
 
     return (
-		<div>
+		<section class="content-shopping-cart-page">
+			<div class="container">
+					<div class="wrap-table-shopping-cart">
+						<table class="table-shopping-cart">
+							<tr class="table_head">
+								<th class="column-1">Product</th>
+								<th class="column-2">Name & Description</th>
+								<th class="column-3">Price</th>
+								<th class="column-4">Quantity</th>
+								<th class="column-5">Total</th>
+								<th class="column-6"></th>
+							</tr>
         {cartList}
-		</div>
+		</table>
+						</div>
+					</div>
+					</section>
         
     )
   }
