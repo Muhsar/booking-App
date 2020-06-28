@@ -1,2 +1,1 @@
-web: npm run dev
-npm install --prefix client
+web: npm run server
